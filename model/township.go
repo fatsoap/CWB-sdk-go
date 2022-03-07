@@ -2,11 +2,11 @@ package model
 
 /* 鄉鎮天氣預報 未來 2,7 天天氣預報 */
 /* F-C0047-001 */
-type CityForecast struct {
+type TownshipWeatherForecast struct {
 	Success string `json:"success"`
 	Result  struct {
-		Resource_id string `json:"resource_id"`
-		Fields      []struct {
+		ResourceId string `json:"resource_id"`
+		Fields     []struct {
 			Id   string `json:"id"`
 			Type string `json:"type"`
 		} `json:"fields"`
