@@ -1,0 +1,14 @@
+@BASE_URL=https://opendata.cwb.gov.tw/api
+@API_KEY={{$dotenv API_KEY}}
+
+### Get CWB
+GET {{BASE_URL}}/v1/rest/datastore/F-C0032-001?Authorization={{API_KEY}}
+
+### Get CWB
+GET {{BASE_URL}}/v1/rest/datastore/F-D0047-001?Authorization={{API_KEY}}
+
+### Get CWB
+GET {{BASE_URL}}/v1/rest/datastore/F-D0047-003?Authorization={{API_KEY}}
+
+### Get CWB
+GET {{BASE_URL}}/v1/rest/datastore/F-D0047-091?Authorization={{API_KEY}}
