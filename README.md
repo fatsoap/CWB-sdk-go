@@ -5,11 +5,12 @@
 ### Install
 
 ```
-go mod github.com/fatsoap/cwb-sdk-go
+go get github.com/fatsoap/cwb-sdk-go
 ```
 
 ```go
-client, _ := New(KEY)
+import cwb "github.com/fatsoap/cwb-sdk-go"
+client, _ := cwb.New(KEY)
 w, err := client.GeneralWeatherForecast36()
 if err != nil {
     log.Fatal("Some Thing Went Wrong")
