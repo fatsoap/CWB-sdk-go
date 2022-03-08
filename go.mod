@@ -1,5 +1,3 @@
-module cwb-sdk-go
+module github.com/fatsoap/cwb-sdk-go
 
 go 1.17
-
-require github.com/joho/godotenv v1.4.0 // indirect
