@@ -28,6 +28,7 @@ func (c *Client) GeneralWeatherForecast36() (*GeneralResponse, error) {
 	{
 		gs.ResourceId = gf.Result.ResourceId
 		gs.Description = gf.Records.DatasetDescription
+		gs.Region = "台灣"
 		for _, data := range gf.Records.Location {
 			var loc GeneralLocation
 			loc.Name = data.LocationName
@@ -89,6 +90,7 @@ func (c *Client) GeneralWeatherForecast36() (*GeneralResponse, error) {
 type GeneralResponse struct {
 	ResourceId  string
 	Description string
+	Region      string
 	Locations   []GeneralLocation
 }
 
