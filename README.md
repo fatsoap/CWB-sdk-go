@@ -5,7 +5,7 @@
 ### Install
 
 ```
-go get github.com/fatsoap/cwb-sdk-go
+go get -u github.com/fatsoap/cwb-sdk-go
 ```
 
 ```go
